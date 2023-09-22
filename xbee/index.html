@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanSat</title>
+
+    // Libs
+
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    
+
+
+</head>
+<body>
+    <h1>Communicate</h1>
+
+    <div id="sample">
+
+    </div>
+    <br>
+    <hr>
+    <h2>Red Light</h2>
+    <button id="LightOn">Turn Light On</button>
+    <button id="LightOff">Turn Light Off</button>
+
+    <script>
+        var socket = io();
+        document.getElementById("LightOn").onclick = function () {
+            socket.emit('lights', { status: "1" });
+        };
+        document.getElementById("LightOff").onclick = function () {
+            socket.emit('lights', { status: "2" });
+        };
+
+        socket.on('data', function(data){
+            console.log(data);
+            document.getElementById('sample').innerHTML =data ;
+        });
+    </script>
+</body>
+</html>
