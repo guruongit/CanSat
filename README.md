@@ -5,7 +5,7 @@
 
 
 > GUI Using Tailwind
-![alt text](https://github.com/guruongit/CanSat/blob/main/GUI.png)
+![alt text](https://github.com/guruongit/CanSat/blob/main/Screenshot%20(405).png)
 
 
 > Telemetry Communication
