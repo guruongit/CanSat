@@ -1,6 +1,6 @@
 # CanSat
  CanSat India Cosmology Club
- # Deployed At [Link](https://n4d3fs-5173.csb.app/)
+ # Deployed At [Link](https://wp547k.csb.app/)
 
 
 
